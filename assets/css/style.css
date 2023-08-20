@@ -102,7 +102,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: #ffcd00;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -121,7 +121,7 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
+  color: #502c1e;
 }
 
 .section-with-bg {
@@ -672,113 +672,154 @@ h6 {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
-# Speakers Section
+# AfterSun Section
 --------------------------------------------------------------*/
-#speakers {
-  padding: 60px 0 30px 0;
-}
 
-#speakers .speaker {
-  position: relative;
+#afterSun {
+  background: url("../img/about-bg.jpg");
+  background-size: contain;
   overflow: hidden;
-  margin-bottom: 30px;
+  position: relative;
+  color: #fff;
+  padding: 90px 0 ;
+  
+}
+#afterSun img{
+  opacity: 15%;
+}
+@media (min-width: 1024px) {
+  #AfterSun {
+    background-attachment: fixed;
+  }
 }
 
-#speakers .speaker .details {
-  background: rgba(6, 12, 34, 0.76);
+#afterSun:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
   position: absolute;
-  left: 0;
-  bottom: -40px;
-  right: 0;
-  text-align: center;
-  padding-top: 10px;
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-#speakers .speaker .details h3 {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#speakers .speaker .details p {
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
-#speakers .speaker .details .social {
-  height: 40px;
-}
-
-#speakers .speaker .details .social i {
-  line-height: 0;
-  margin: 0 2px;
-}
-
-#speakers .speaker .details a {
-  color: #fff;
-}
-
-#speakers .speaker .details a:hover {
-  color: #f82249;
-}
-
-#speakers .speaker:hover .details {
   bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-#speakers-details {
-  padding: 60px 0;
-}
-
-#speakers-details .details h2 {
-  color: #112363;
-  font-size: 28px;
-  font-weight: 700;
+#afterSun h2 {
+  font-size: 36px;
+  font-weight: bold;
   margin-bottom: 10px;
-}
-
-#speakers-details .details .social {
-  margin-bottom: 15px;
-}
-
-#speakers-details .details .social a {
-  background: #e9edfb;
-  color: #112363;
-  line-height: 1;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#speakers-details .details .social a:hover {
-  background: #f82249;
   color: #fff;
 }
 
-#speakers-details .details .social a i {
-  font-size: 16px;
-  line-height: 0;
+#afterSun h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
-#speakers-details .details p {
-  color: #112363;
-  font-size: 15px;
-  margin-bottom: 10px;
+#afterSun p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 
 /*--------------------------------------------------------------
-# Sponsors Section
+# Protection Section
+--------------------------------------------------------------*/
+#protection {
+  padding: 90px 0;
+  background: url("../img/about-bg.jpg");
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+#protection img{
+  opacity: 30%;
+}
+#protection .supporter-logo:hover img {
+  transform: scale(1.2);
+}
+#protection h2{
+  color: #ffcd00;
+  font-weight: bold;
+}
+
+#protection ul {
+  padding-right: 20px; /* Adjust the value to change the indentation from the right side */
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+#protection ul li {
+  margin-bottom: 10px; /* Add some spacing between each list item */
+}
+
+
+/*--------------------------------------------------------------
+# Tanning Section
+--------------------------------------------------------------*/
+#tanning {
+  padding: 90px 0;
+  background: url("../img/about-bg.jpg");
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+#tanning img{
+  opacity: 30%;
+}
+#tanning .supporter-logo:hover img {
+  transform: scale(1.2);
+}
+#tanning h2{
+  color: #ffcd00;
+  font-weight: bold;
+}
+
+#tanning ul {
+  padding-right: 20px; /* Adjust the value to change the indentation from the right side */
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+#tanning ul li {
+  margin-bottom: 10px; /* Add some spacing between each list item */
+}
+/*--------------------------------------------------------------
+# kids Section
+--------------------------------------------------------------*/
+#kids {
+  padding: 90px 0;
+  align-items: center;
+
+}
+#kids .supporter-logo:hover img {
+  transform: scale(1.2);
+}
+#kids h2{
+  color: #ffcd00;
+  font-weight: bold;
+}
+#kids h6{
+  margin-bottom: 400px;
+  font-weight: bolder;
+}
+
+#kids ul {
+  padding-right: 20px; /* Adjust the value to change the indentation from the right side */
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+#kids ul li {
+  margin-bottom: 10px; /* Add some spacing between each list item */
+}
+
+/*--------------------------------------------------------------
+# Where yo buy Section
 --------------------------------------------------------------*/
 #supporters {
   padding: 90px 0;
@@ -882,7 +923,7 @@ h6 {
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 #contact .contact-info {
@@ -1003,7 +1044,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #f82249;
+  background: #ffcd00;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1013,7 +1054,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit]:hover {
-  background: #e0072f;
+  background: #00a0df;
 }
 
 @keyframes animate-loading {
