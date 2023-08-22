@@ -1,0 +1,154 @@
+.back-button {
+  position: fixed;
+  left: 20px;
+  bottom: 700px;
+  text-align: center;
+  z-index: 999; /* Ensure the button is above other content */
+}
+
+.back-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+.back-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+/* Basic Styling */
+html, body {
+  
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  padding: 70px 0; /* Adjust padding as needed */
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+  
+}
+/* Left Column */
+.left-column img {
+  width: 75%;
+  
+ 
+}
+
+.section-yellow {
+  background-color: #ffcf00;
+}
+
+.section-violet {
+  background-color: blueviolet;
+}
+
+
+/* Columns */
+.left-column {
+  width: 65%;
+  position: relative;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+
+
+
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #00a0df;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+}
