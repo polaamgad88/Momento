@@ -473,7 +473,7 @@ h6 {
 .text-overlay {
   position: absolute;
   font-family: 'DancingScript';
-    top: 30%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -484,6 +484,13 @@ h6 {
   font-family: 'DancingScript';
 
 }
+
+#hero .brown-text1 {
+  color: #502c1e; /* Change the color of the text within this span */
+  font-family: 'DancingScript';
+  text-transform: capitalize;
+}
+
 #hero .yellow-text {
   color: #fecf07; /* Change the color of the text within this span */
   font-family: 'DancingScript';
@@ -683,7 +690,6 @@ h6 {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -713,6 +719,62 @@ h6 {
 }
 
 
+@media (max-width: 991px) {
+  #about .hero-container {
+    top: 70px;
+  }
+}
+
+#about h1 {
+  color: #fff;
+  font-family: 'DancingScript';
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+#about h1 span {
+  color: #e9bc0a;
+}
+#about h1 p {
+  color: #01a1dd;
+}
+
+
+
+@media (max-width: 991px) {
+  #about h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 991px) {
+  #about img {
+    display: block; /* Set the image as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 991px) {
+  .row {
+      flex-direction: column; /* Stack columns in a column layout on mobile */
+  }
+  
+  .col-lg-6 {
+      order: 2; /* Move the text column below the image column */
+  }
+
+  .col-lg-3 {
+      order: 1; /* Move the image column above the text column */
+      margin-bottom: 20px; /* Add spacing between image and text */
+  }
+  
+  .image-container {
+      text-align: center; /* Center align the image on mobile */
+  }
+}
 /*--------------------------------------------------------------
 # AfterSun Section
 --------------------------------------------------------------*/
@@ -737,10 +799,44 @@ h6 {
 }
 
 
-#protection ul {
-  margin-left: 60px;
-  top: 10%; /* Adjust the value to change the indentation from the right side */
-  direction: ltr; /* Set text direction to right-to-left */
+
+
+
+@media (max-width: 991px) {
+  #afterSun .row {
+      position: relative; /* Set the row as relative positioning context */
+      flex-direction: column; /* Stack columns in a column layout on mobile */
+  }
+
+  #afterSun .col-lg-5 {
+      order: 2; /* Move the .col-lg-5 column below .col-lg-1 on mobile */
+      text-align: left; /* Center align the h2 element */
+      color:#502c1e;
+      font-weight: 500;
+      list-style: square;
+    }
+
+  #afterSun .col-lg-5 h2 {
+      position: absolute; /* Set the h2 element as absolutely positioned */
+      top: -160px; /* Adjust the value to control the spacing */
+      margin-left: 0px ;
+      margin-right: 0px;
+      width: 100%; /* Ensure full width */
+      text-align: center; /* Center align the h2 element */
+  }
+
+  #afterSun .col-lg-1 {
+      order: 1; /* Move the .col-lg-1 image above .col-lg-5 on mobile */
+      margin-bottom: 20px; /* Add spacing between the columns */
+      text-align: center; /* Center align the image */
+  }
+
+  #afterSun .col-lg-1 img {
+      display: block; /* Set the image as a block-level element */
+      margin: 0 auto; /* Center the image horizontally */
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
 }
 
 
@@ -755,15 +851,11 @@ h6 {
   position: relative;
   color: #fff;
 
-
-  
 }
 #protection img{
   opacity:100%;
 }
-#protection .supporter-logo:hover img {
-  transform: scale(1.2);
-}
+
 #protection h2{
   margin-top: 90px;
   margin-left: 60px;
@@ -771,14 +863,46 @@ h6 {
   font-weight: bold;
 }
 
-#protection ul {
-  margin-left: 60px;
-  top: 10%; /* Adjust the value to change the indentation from the right side */
-  direction: ltr; /* Set text direction to right-to-left */
-}
 
-#protection ul li {
-  margin-bottom: 10px; /* Add some spacing between each list item */
+
+
+
+
+@media (max-width: 991px) {
+  #protection .row {
+      position: relative; /* Set the row as relative positioning context */
+      flex-direction: column; /* Stack columns in a column layout on mobile */
+  }
+
+  #protection .col-lg-5 {
+      order: 2; /* Move the .col-lg-5 column below .col-lg-1 on mobile */
+      text-align: left; /* Center align the h2 element */
+      color:#502c1e;
+      font-weight: 500;
+      list-style: square;
+    }
+
+  #protection .col-lg-5 h2 {
+      position: absolute; /* Set the h2 element as absolutely positioned */
+      top: -160px; /* Adjust the value to control the spacing */
+      margin-left: 0px ;
+      margin-right: 0px;
+      width: 100%; /* Ensure full width */
+      text-align: center; /* Center align the h2 element */
+  }
+
+  #protection .col-lg-1 {
+      order: 1; /* Move the .col-lg-1 image above .col-lg-5 on mobile */
+      margin-bottom: 20px; /* Add spacing between the columns */
+      text-align: center; /* Center align the image */
+  }
+
+  #protection .col-lg-1 img {
+      display: block; /* Set the image as a block-level element */
+      margin: 0 auto; /* Center the image horizontally */
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
 }
 
 
@@ -814,6 +938,54 @@ h6 {
 #tanning ul li {
   margin-bottom: 10px; /* Add some spacing between each list item */
 }
+
+
+@media (max-width: 991px) {
+  #tanning .row {
+      position: relative; /* Set the row as relative positioning context */
+      flex-direction: column; /* Stack columns in a column layout on mobile */
+  }
+
+  #tanning .col-lg-5 {
+      order: 2; /* Move the .col-lg-5 column below .col-lg-1 on mobile */
+      text-align: left; /* Center align the h2 element */
+      color:#502c1e;
+      font-weight: 500;
+      list-style: square;
+    }
+
+  #tanning .col-lg-5 h2 {
+      position: absolute; /* Set the h2 element as absolutely positioned */
+      top: -160px; /* Adjust the value to control the spacing */
+      margin-left: 0px ;
+      margin-right: 0px;
+      width: 100%; /* Ensure full width */
+      text-align: center; /* Center align the h2 element */
+  }
+
+  #tanning .col-lg-1 {
+      order: 1; /* Move the .col-lg-1 image above .col-lg-5 on mobile */
+      margin-bottom: 5px; /* Add spacing between the columns */
+      text-align: center; /* Center align the image */
+  }
+
+  #tanning .col-lg-1 img {
+      display: block; /* Set the image as a block-level element */
+      margin: 0 auto; /* Center the image horizontally */
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  #tanning .col-lg-6 img {
+    display: block; /* Set the image as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+}
+
+
+
 /*--------------------------------------------------------------
 # kids Section
 --------------------------------------------------------------*/
@@ -881,6 +1053,7 @@ h6 {
 --------------------------------------------------------------*/
 #faq {
   padding: 60px 0;
+  background-color: #00a0df;
 }
 
 #faq .faq-list {
