@@ -231,6 +231,7 @@ h6 {
 }
 
 .navbar>ul>li>a:before {
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -339,11 +340,10 @@ h6 {
 
   .navbar ul {
     display: none;
-    margin-top: 60px;
-
+    margin: 0px;
   }
 }
-.navbar li{
+.navbar li {
   margin-bottom: 10px;
 }
 
@@ -438,7 +438,9 @@ h6 {
   color: #FFCD0E;
 }
 
-
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -1022,7 +1024,7 @@ h6 {
 # Where yo buy Section
 --------------------------------------------------------------*/
 #supporters {
-  padding: 90px 0;
+  padding: 105px;
 }
 
 #supporters .supporters-wrap {
