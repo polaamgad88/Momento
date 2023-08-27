@@ -683,7 +683,7 @@ h6 {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.2);
+  background: rgba(13, 20, 41, 0.0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -719,7 +719,7 @@ h6 {
 
 #afterSun {
   
-  background: url("../img/1920x1056\ \(About\ us\).jpg");
+  background: url("../img/momento\ website\ bg\ A\ 3162x1056\ -\ 03.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -729,41 +729,18 @@ h6 {
 #afterSun img{
   opacity: 100%;
 }
-@media (min-width: 1024px) {
-  #AfterSun {
-    background-attachment: fixed;
-  }
-}
-
-#afterSun:before {
-  content: "";
-  background: rgba(13, 20, 41, 0.0);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 #afterSun h2 {
-  font-size: 36px;
+  margin-top: 90px;
+  margin-left: 60px;
+  color: #502c1e;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
 }
 
-#afterSun h3 {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
-}
 
-#afterSun p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #fff;
+#protection ul {
+  margin-left: 60px;
+  top: 10%; /* Adjust the value to change the indentation from the right side */
+  direction: ltr; /* Set text direction to right-to-left */
 }
 
 
@@ -772,11 +749,14 @@ h6 {
 --------------------------------------------------------------*/
 #protection {
   padding: 90px 0;
-  background: url("../img/about-bg.jpg");
-  background-size: contain;
+  background: url("../img/momento\ website\ bg\ A\ 3162x1056\ -\ 01.jpg");
+  background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
+
+
+  
 }
 #protection img{
   opacity:100%;
@@ -785,13 +765,16 @@ h6 {
   transform: scale(1.2);
 }
 #protection h2{
+  margin-top: 90px;
+  margin-left: 60px;
   color: #ffcd00;
   font-weight: bold;
 }
 
 #protection ul {
-  padding-right: 20px; /* Adjust the value to change the indentation from the right side */
-  direction: rtl; /* Set text direction to right-to-left */
+  margin-left: 60px;
+  top: 10%; /* Adjust the value to change the indentation from the right side */
+  direction: ltr; /* Set text direction to right-to-left */
 }
 
 #protection ul li {
@@ -804,8 +787,8 @@ h6 {
 --------------------------------------------------------------*/
 #tanning {
   padding: 90px 0;
-  background: url("../img/about-bg.jpg");
-  background-size: contain;
+  background: url("../img/momento\ website\ bg\ A\ 3162x1056\ -\ 02.jpg");
+  background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
@@ -817,13 +800,15 @@ h6 {
   transform: scale(1.2);
 }
 #tanning h2{
-  color: #ffcd00;
+  margin-top: 90px;
+  margin-right: 60px;
+  color: #502c1e;
   font-weight: bold;
 }
 
 #tanning ul {
   padding-right: 20px; /* Adjust the value to change the indentation from the right side */
-  direction: rtl; /* Set text direction to right-to-left */
+  direction: ltr; /* Set text direction to right-to-left */
 }
 
 #tanning ul li {
