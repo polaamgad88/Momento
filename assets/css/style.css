@@ -65,7 +65,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #00a0df;
+  background: transparent;
+  box-shadow: #040919;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -170,12 +171,12 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 100px;
 }
 
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 30px;
+    max-height: 90px;
   }
 }
 
@@ -236,7 +237,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #ffcd00;
+  background-color: rgba(255, 205, 0, 0.2); 
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -265,7 +266,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background-color: rgba(0, 0, 0, 0.0); 
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -324,7 +325,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: transparent;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -349,7 +350,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: transparent;
   transition: 0.3s;
   z-index: 999;
 }
@@ -368,9 +369,10 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: rgba(255, 205, 0, 0.5);
   overflow-y: auto;
   transition: 0.3s;
+  align-items: center;
 }
 
 .navbar-mobile>ul>li {
@@ -387,13 +389,13 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #060c22;
+  color: #00a0df;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #f82249;
+  color: #fff;
 }
 
 .navbar-mobile .getstarted,
@@ -456,16 +458,37 @@ h6 {
   height: 100%;
   object-fit: cover;
 }
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('../CinzelDecorative-Bold.ttf'); /* Adjust the path */
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../DancingScript-VariableFont_wght.ttf'); /* Adjust the path */
+}
+
+
 
 .text-overlay {
   position: absolute;
-  top: 50%;
+  font-family: 'DancingScript';
+    top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
 }
+#hero .blue-text {
+  color: #01a1dd; /* Change the color of the text within this span */
+  font-family: 'DancingScript';
 
+}
+#hero .yellow-text {
+  color: #fecf07; /* Change the color of the text within this span */
+  font-family: 'DancingScript';
+
+}
 
 @media (min-width: 1024px) {
   #hero {
@@ -505,10 +528,11 @@ h6 {
 
 #hero h1 {
   color: #fff;
-  font-family: "EPILOGUE", sans-serif;
+  font-family: 'DancingScript';
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
+
 }
 
 #hero h1 span {
@@ -518,12 +542,7 @@ h6 {
   color: #01a1dd;
 }
 
-#hero .blue-text {
-  color: #01a1dd; /* Change the color of the text within this span */
-}
-#hero .yellow-text {
-  color: #fecf07; /* Change the color of the text within this span */
-}
+
 
 @media (max-width: 991px) {
   #hero h1 {
@@ -535,6 +554,7 @@ h6 {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
+  
 }
 
 @media (max-width: 991px) {
@@ -698,16 +718,16 @@ h6 {
 --------------------------------------------------------------*/
 
 #afterSun {
-  background: url("../img/about-bg.jpg");
-  background-size: contain;
+  
+  background: url("../img/1920x1056\ \(About\ us\).jpg");
+  background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
   padding: 90px 0 ;
-  
 }
 #afterSun img{
-  opacity: 15%;
+  opacity: 100%;
 }
 @media (min-width: 1024px) {
   #AfterSun {
@@ -717,7 +737,7 @@ h6 {
 
 #afterSun:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(13, 20, 41, 0.0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -759,7 +779,7 @@ h6 {
   color: #fff;
 }
 #protection img{
-  opacity: 30%;
+  opacity:100%;
 }
 #protection .supporter-logo:hover img {
   transform: scale(1.2);
@@ -791,7 +811,7 @@ h6 {
   color: #fff;
 }
 #tanning img{
-  opacity: 30%;
+  opacity: 100%;
 }
 #tanning .supporter-logo:hover img {
   transform: scale(1.2);
