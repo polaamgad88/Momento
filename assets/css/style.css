@@ -231,7 +231,6 @@ h6 {
 }
 
 .navbar>ul>li>a:before {
-  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -325,7 +324,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: transparent;
+  color:#79442f;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -340,8 +339,14 @@ h6 {
 
   .navbar ul {
     display: none;
+    margin-top: 60px;
+
   }
 }
+.navbar li{
+  margin-bottom: 10px;
+}
+
 
 .navbar-mobile {
   position: fixed;
@@ -433,9 +438,7 @@ h6 {
   color: #FFCD0E;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
+
 
 /*--------------------------------------------------------------
 # Hero Section
