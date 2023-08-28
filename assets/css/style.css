@@ -1024,7 +1024,9 @@ h6 {
 # Where yo buy Section
 --------------------------------------------------------------*/
 #supporters {
-  padding: 105px;
+  padding: 105px 0px;
+
+
 }
 
 #supporters .supporters-wrap {
