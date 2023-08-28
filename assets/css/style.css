@@ -547,12 +547,7 @@ h6 {
 
 }
 
-#hero h1 span {
-  color: #e9bc0a;
-}
-#hero h1 p {
-  color: #01a1dd;
-}
+
 
 
 
@@ -560,6 +555,9 @@ h6 {
   #hero h1 {
     font-size: 34px;
   }
+  #hero img {
+  padding: 50px;  
+}
 }
 
 #hero p {
@@ -569,11 +567,6 @@ h6 {
   
 }
 
-@media (max-width: 991px) {
-  #hero p {
-    font-size: 16px;
-  }
-}
 
 #hero .play-btn {
   width: 94px;
@@ -784,24 +777,26 @@ h6 {
 --------------------------------------------------------------*/
 
 #afterSun {
+  
   background: url("../img/momento\ website\ bg\ A\ 3162x1056\ -\ 03.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 90px ;
+  padding: 90px 0 ;
 }
-#aftersun ul{
-  top: 900%;
+#afterSun img{
+  opacity: 100%;
 }
-
 #afterSun h2 {
- 
+  margin-top: 90px;
+  margin-left: 60px;
   color: #fff;
   background-color: #00a0df;
   font-weight: bold;
   width: 40%;
 }
+
 
 
 
@@ -818,6 +813,7 @@ h6 {
       color:#502c1e;
       font-weight: 500;
       list-style: square;
+      
     }
 
   #afterSun .col-lg-5 h2 {
@@ -827,6 +823,8 @@ h6 {
       margin-right: 0px;
       width: 90%; /* Ensure full width */
       text-align: center; /* Center align the h2 element */
+      
+      
   }
 
   #afterSun .col-lg-1 {
@@ -842,6 +840,7 @@ h6 {
       height: auto; /* Maintain aspect ratio */
   }
 }
+
 
 
 /*--------------------------------------------------------------
@@ -1112,7 +1111,7 @@ h6 {
 }
 
 #faq .faq-list .icon-show {
-  display: none;
+  display: inline-block;
 }
 
 #faq .faq-list .collapsed {
@@ -1129,7 +1128,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed .icon-close {
-  display: none;
+  display: inline-block;
   transition: 0.6s;
 }
 
