@@ -9,6 +9,7 @@ const multer = require('multer');
 const mongoDBStore = require('connect-mongodb-session')(session)
 const mongoose = require("mongoose");
 const nodemailer = require('nodemailer')
+const Products = require('./models/products')
 let transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -81,12 +82,21 @@ app.use(mongoSanitize());
 app.use(xss());
 app.use(hpp());
 app.set('views', 'views');
+app.set('view engine', 'ejs');
 
 const { MongoDBStore } = require("connect-mongodb-session");
 app.use(multer({ storage: fileStorage, fileFilter: Filter, limits: { fileSize: 100000 } }).single('image'), ErrorHandler);
 
 app.use("/home", (req, res, next) => {
-  res.status(404).sendFile(path.join(__dirname, 'views', 'index.html'))
+  Products.findAll()
+    .then(([result, meta]) => {
+      console.log(result)
+      res.status(200).render('index.ejs', { image: result[0].product_image, data: result[0].description, name: result[0].product_name })
+    })
+    .catch((err) => {
+      console.log(err)
+    });
+  
 });
 app.post("/send_mail", (req, res, next) => {
   console.log(req.body)
