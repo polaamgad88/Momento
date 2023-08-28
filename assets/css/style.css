@@ -678,11 +678,10 @@ h6 {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/1920x1056\ \(About\ us\).jpg");
+  background-color: #fff;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: #fff;
   padding: 60px 0 40px 0;
   
 }
@@ -706,7 +705,7 @@ h6 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #fff;
+  color: #ffcd00;
 }
 
 #about h3 {
@@ -720,7 +719,7 @@ h6 {
 #about p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #502c1e;
 }
 
 
@@ -731,8 +730,8 @@ h6 {
 }
 
 #about h1 {
-  color: #fff;
-  font-family: 'DancingScript';
+  color: #ffcd00;
+  font-family: 'CinzelDecorative-Bold';
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -785,24 +784,24 @@ h6 {
 --------------------------------------------------------------*/
 
 #afterSun {
-  
   background: url("../img/momento\ website\ bg\ A\ 3162x1056\ -\ 03.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 90px 0 ;
+  padding: 90px ;
 }
-#afterSun img{
-  opacity: 100%;
-}
-#afterSun h2 {
-  margin-top: 90px;
-  margin-left: 60px;
-  color: #502c1e;
-  font-weight: bold;
+#aftersun ul{
+  top: 900%;
 }
 
+#afterSun h2 {
+ 
+  color: #fff;
+  background-color: #00a0df;
+  font-weight: bold;
+  width: 40%;
+}
 
 
 
@@ -826,7 +825,7 @@ h6 {
       top: -160px; /* Adjust the value to control the spacing */
       margin-left: 0px ;
       margin-right: 0px;
-      width: 100%; /* Ensure full width */
+      width: 90%; /* Ensure full width */
       text-align: center; /* Center align the h2 element */
   }
 
@@ -855,7 +854,12 @@ h6 {
   overflow: hidden;
   position: relative;
   color: #fff;
+  
 
+}
+#protection ul{
+  margin-top: 20px;
+  margin-left: 20px;
 }
 #protection img{
   opacity:100%;
@@ -863,9 +867,11 @@ h6 {
 
 #protection h2{
   margin-top: 90px;
-  margin-left: 60px;
-  color: #ffcd00;
+  margin-left: 30px;
+  color: #fff;
   font-weight: bold;
+  background-color: #ffcd00;
+  width: 80%;
 }
 
 
@@ -892,8 +898,9 @@ h6 {
       top: -160px; /* Adjust the value to control the spacing */
       margin-left: 0px ;
       margin-right: 0px;
-      width: 100%; /* Ensure full width */
+      width: 90%; /* Ensure full width */
       text-align: center; /* Center align the h2 element */
+      
   }
 
   #protection .col-lg-1 {
@@ -929,15 +936,18 @@ h6 {
   transform: scale(1.2);
 }
 #tanning h2{
-  margin-top: 90px;
+  margin-top: 260px;
   margin-right: 60px;
-  color: #502c1e;
+  color: #fff;
+  background-color: #502c1e;
   font-weight: bold;
+  width: 50%;
 }
 
 #tanning ul {
   padding-right: 20px; /* Adjust the value to change the indentation from the right side */
   direction: ltr; /* Set text direction to right-to-left */
+  color: #502c1e;
 }
 
 #tanning ul li {
@@ -960,6 +970,7 @@ h6 {
     }
 
   #tanning .col-lg-5 h2 {
+    margin-top: 90px;
       position: absolute; /* Set the h2 element as absolutely positioned */
       top: -160px; /* Adjust the value to control the spacing */
       margin-left: 0px ;
