@@ -8,6 +8,14 @@ const xss = require("xss-clean");
 const multer = require('multer');
 const mongoDBStore = require('connect-mongodb-session')(session)
 const mongoose = require("mongoose");
+const nodemailer = require('nodemailer')
+let transport = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.MAIL,
+    pass: process.env.PASS,
+  }
+})
 mongoose.set('strictQuery', true);
 const store = new mongoDBStore({
   uri: MongoURI,
@@ -77,9 +85,31 @@ app.set('views', 'views');
 const { MongoDBStore } = require("connect-mongodb-session");
 app.use(multer({ storage: fileStorage, fileFilter: Filter, limits: { fileSize: 100000 } }).single('image'), ErrorHandler);
 
-app.use("/home",(req, res, next) => {
-  res.status(404).sendFile(path.join(__dirname, 'views' , 'index.html'))
+app.use("/home", (req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, 'views', 'index.html'))
 });
+app.post("/send_mail", (req, res, next) => {
+  console.log(req.body)
+  const d = new Date();
+  res.status(200).send("OK")
+  let options = {
+    from: process.env.MAIL,
+    to: "polaamgad288@gmail.com",
+    subject: 'MOMENTO CONTACT US',
+    text:
+      `name: ` + req.body.name + '\n' +
+      `mail: ` + req.body.email + '\n' +
+      `subject: ` + req.body.subject + '\n' +
+      `contant: ` + req.body.message
+  }
+  transport.sendMail(options, (err, data) => {
+    if (err)
+      console.log(err)
+    else
+      console.log('done')
+  })
+});
+
 
 app.use((req, res, next) => {
   res.status(404).send("404 not found")
