@@ -777,24 +777,23 @@ h6 {
 --------------------------------------------------------------*/
 
 #afterSun {
-  
+  padding: 90px 0 ;
   background: url("../img/momento\ website\ bg\ A\ 3162x1056\ -\ 03.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 90px 0 ;
 }
 #afterSun img{
   opacity: 100%;
 }
 #afterSun h2 {
   margin-top: 90px;
-  margin-left: 60px;
+  margin-left: 30px;
   color: #fff;
   background-color: #00a0df;
   font-weight: bold;
-  width: 40%;
+  width: 80%;
 }
 
 
@@ -1140,7 +1139,7 @@ h6 {
 #contact {
   padding: 40px 0; 
 
-  
+
 }
 
 #contact .contact-info {
