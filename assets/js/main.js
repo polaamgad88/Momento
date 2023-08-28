@@ -160,7 +160,19 @@
     selector: '.glightbox'
   });
 
- 
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const languageToggle = document.getElementById("language-toggle");
+    
+    languageToggle.addEventListener("click", function () {
+      if (document.documentElement.lang === "en") {
+        window.location.href = "index-ar.html";
+      } else {
+        window.location.href = "index.html";
+      }
+    });
+  });
 
   /**
    * Animation on scroll
