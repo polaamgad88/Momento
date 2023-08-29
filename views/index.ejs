@@ -36,7 +36,8 @@
 
       <div id="logo" class="me-auto">
         <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-        <a href="index.html" class="scrollto"><img src="assets/img/Momento-01.png" alt="" title=""></a>
+        <a href="index.html" class="scrollto"><img ondragstart="return false;" src="assets/img/Momento-01.png" alt=""
+            title=""></a>
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
@@ -61,6 +62,10 @@
               target="_blank">
               <i class="fab fa-instagram" style="font-size: 20px;"></i></a></li>
           </li>
+          <li><a class="nav-link scrollto" id="language-toggle" href="/home_ar"><img src="./assets/img/ar.png" /></a>
+          </li>
+
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle">
           &#8801;
@@ -76,11 +81,14 @@
 
     <div class="video-container">
       <video autoplay muted loop id="video-background">
-        <source src="./assets/img/momento video-2.mp4" type="video/mp4">
+        <source src="./assets/img/momento video blue 1080-2.mp4" type="video/mp4">
       </video>
       <div class="text-overlay">
         <h1 class="mb-4 pb-0">
-          <span class="hero brown-text1">Feel the summer breeze <br></span>
+          <img src="./assets/img/Momento-01 (1).png" style="max-height: 240px;" data-aos="zoom-in-up"
+            data-aos-duration="3000"><br>
+
+          <span class="hero brown-text1" data-aos="fade-right">Feel the summer breeze <br></span>
         </h1>
       </div>
 
@@ -94,37 +102,30 @@
     <!-- ======= About Section ======= -->
 
     <section id="about">
+
+
+
+
       <div class="container position-relative" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-6">
-            <h2>About Momento</h2>
-            <br>
-            <br>
 
-            <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.
-              Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.
-              Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.
-              Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.
-            </p>
+            <h1>About Momento</h1>
+            <br>
+            <br>
+            <p id="description">
+              Keep Your Skin Strong & Protected with Momento
+              All you need to enjoy your vacation. We proudly
+              use high quality
+              ingredients, innovative formulations and advanced technology to guarantee you tan in a safe and natural
+              way and we take care of your protection under the sun.</p>
+
             <br>
             </p>
-            Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-            accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-            est ut optio sequi unde.
-            Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-            accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-            est ut optio sequi unde.
+
           </div>
           <div class="col-lg-3">
-            <img src="./assets/img/600x600 (About us).jpg">
+            <img ondragstart="return false;" src="./assets/img/600x600 (About us).jpg">
           </div>
 
         </div>
@@ -141,26 +142,26 @@
 
             <div class="col-lg-5 col-md-12">
               <h2>
-                <%=name%>
+                <%= name%>
               </h2>
               <br><br><br><br>
               <ul>
                 <li>
-                  <%= data %>
+                  <%= data%>
                 </li>
                 <li>
-                  <%= data %>
+                  <%= data%>
                 </li>
                 <li>
-                  <%= data %>
+                  <%= data%>
                 </li>
               </ul>
             </div>
 
 
             <div class="col-lg-1 col-md-6">
-              <a href="products.html#ultraprotection"> <!-- Set the href attribute to the HTML file path -->
-                <img src="<%= image %>" />
+              <a href="/product?section=ultraprotection"> <!-- Set the href attribute to the HTML file path -->
+                <img src="<%= image%>">
               </a>
             </div>
 
@@ -181,15 +182,15 @@
 
 
             <div class="col-lg-6">
-
-              <a href="products.html#tanning"> <!-- Set the href attribute to the HTML file path -->
+              
+              <a href="/product?section=tanning"> <!-- Set the href attribute to the HTML file path -->
                 <img src="./assets/img/600x600 (Tanning Oil).png">
               </a>
             </div>
 
             <div class="col-lg-5">
               <h2>Tanning Oil</h2>
-              <br><br><br><br>
+              <br><br>
               <ul>
                 <li>Lorem ipsum dolor sit amet, ut magna aliqua.</li>
                 <li>Lorem ipsum dolor sit amet, ut magna aliqua.</li>
@@ -219,7 +220,7 @@
             <div class="col-lg-5">
 
               <h2>After Sun Gel</h2>
-              <br><br><br><br>
+              <br><br>
               <ul>
                 <li>Lorem ipsum dolor sit amet, ut magna aliqua.</li>
                 <li>Lorem ipsum dolor sit amet, ut magna aliqua.</li>
@@ -228,8 +229,8 @@
 
             </div>
             <div class="col-lg-1">
-
-              <a href="products.html#aftersun"> <!-- Set the href attribute to the HTML file path -->
+              
+              <a href="/product?section=aftersun"> <!-- Set the href attribute to the HTML file path -->
                 <img src="./assets/img/600x600 (After Sun).png">
               </a>
 
@@ -430,10 +431,10 @@
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus
+                <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">Tortor vitae purus faucibus
                   ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
                     class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                <div id="faq7" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
                     nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut

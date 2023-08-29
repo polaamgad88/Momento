@@ -87,6 +87,21 @@ app.set('view engine', 'ejs');
 const { MongoDBStore } = require("connect-mongodb-session");
 app.use(multer({ storage: fileStorage, fileFilter: Filter, limits: { fileSize: 100000 } }).single('image'), ErrorHandler);
 
+app.use("/home_ar", (req, res, next) => {
+  Products.findAll()
+    .then(([result, meta]) => {
+      console.log(result)
+      res.status(200).render('index-ar.ejs', { image: result[0].product_image, data: result[0]['description-ar'], name: result[0]['product_name-ar'] })
+    })
+    .catch((err) => {
+      console.log(err)
+    });
+
+});
+app.get("/product", (req, res, next) => {
+  console.log(req.query.section)
+  res.status(200).render('products.ejs', { destination: req.query.section })
+});
 app.use("/home", (req, res, next) => {
   Products.findAll()
     .then(([result, meta]) => {
@@ -96,7 +111,7 @@ app.use("/home", (req, res, next) => {
     .catch((err) => {
       console.log(err)
     });
-  
+
 });
 app.post("/send_mail", (req, res, next) => {
   console.log(req.body)
