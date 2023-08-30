@@ -58,7 +58,10 @@ section{
 }
 .section-brown {
   background-color: #502c1e;
-  
+  color: #fff;
+}
+.section-brown h1 {
+  color: #fff;
 }
 
 .section-violet {
@@ -96,7 +99,6 @@ section{
 .product-description h1 {
   font-weight: 300;
   font-size: 52px;
-  color: #43484D;
   letter-spacing: -2px;
 }
 .product-description p {
