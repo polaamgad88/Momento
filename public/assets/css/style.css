@@ -54,7 +54,12 @@ h6 {
   overflow: visible;
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
-
+.en{
+  direction: ltr;
+}
+.ar{
+  direction: rtl;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -129,13 +134,6 @@ h6 {
   background-color: #f6f7fd;
 }
 
-
-.en{
-  direction: ltr;
-}
-.ar{
-  direction: rtl;
-}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -775,7 +773,10 @@ h6 {
   overflow: hidden;
   position: relative;
   color: #fff;
+  font-size: x-large;
 }
+
+
 #afterSun img{
   opacity: 100%;
 }
@@ -788,10 +789,6 @@ h6 {
   width: 80%;
 }
 
-
-
-
-
 @media (max-width: 991px) {
   #afterSun .row {
       position: relative; /* Set the row as relative positioning context */
@@ -803,8 +800,8 @@ h6 {
       text-align: left; /* Center align the h2 element */
       color:#502c1e;
       font-weight: 500;
-      list-style: square;
-      
+      font-size: large;
+
     }
 
   #afterSun .col-lg-5 h2 {
@@ -822,6 +819,8 @@ h6 {
       order: 1; /* Move the .col-lg-1 image above .col-lg-5 on mobile */
       margin-bottom: 20px; /* Add spacing between the columns */
       text-align: center; /* Center align the image */
+            font-size: large;
+
   }
 
   #afterSun .col-lg-1 img {
@@ -848,8 +847,25 @@ h6 {
 
 }
 #protection ul{
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 20px;
+  font-size: larger;
+  list-style: none;
+  color: #502c1e;
+  font-weight: 500;
+}
+
+#protection  ul li::before {
+  content: "\f132"; /* Font Awesome code for the solid shield icon */
+  font-family: "Font Awesome 5 Free"; /* Ensure the correct font family is used */
+  font-weight: 900; /* Font weight for solid icons */
+  font-size: 1.2em; /* Adjust the size as needed */
+  margin-right: 0.5em; /* Add spacing between the icon and the content */
+}
+
+/* Additional styles for the list items */
+#protection  ul li {
+  margin-bottom: 10px;
 }
 #protection img{
   opacity:100%;
@@ -879,7 +895,7 @@ h6 {
       order: 2; /* Move the .col-lg-5 column below .col-lg-1 on mobile */
       text-align: left; /* Center align the h2 element */
       color:#502c1e;
-      font-weight: 500;
+      font-weight: bold;
       list-style: square;
     }
 
@@ -935,14 +951,26 @@ h6 {
 }
 
 #tanning ul {
-  padding-right: 20px; /* Adjust the value to change the indentation from the right side */
+  direction: ltr; /* Set text direction to right-to-left */
+  color: #502c1e;
+  list-style: none;
+
+}
+
+
+#tanning li::before {
+  content: "\2600"; /* Unicode value for the sun icon */
+  font-size: 1.2em; /* Adjust the size as needed */
+  margin-right: 0.5em; /* Add spacing between the icon and the content */
+}
+
+#tanning li {
+  margin-bottom: 10px;
   direction: ltr; /* Set text direction to right-to-left */
   color: #502c1e;
 }
 
-#tanning ul li {
-  margin-bottom: 10px; /* Add some spacing between each list item */
-}
+
 
 
 @media (max-width: 991px) {
@@ -957,6 +985,8 @@ h6 {
       color:#502c1e;
       font-weight: 500;
       list-style: square;
+      font-size: large;
+
     }
 
   #tanning .col-lg-5 h2 {
@@ -1240,7 +1270,7 @@ h6 {
 
 #contact .php-email-form input:focus,
 #contact .php-email-form textarea:focus {
-  border-color: #f82249;
+  border-color: #502c1e;
 }
 
 #contact .php-email-form input {
@@ -1338,7 +1368,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: #502c1e;
   color: #fff;
 }
 
@@ -1349,7 +1379,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid #00a0df;
 }
 
 #footer .footer-top .footer-links {
@@ -1364,7 +1394,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: #502c1e;
   font-size: 18px;
 }
 
@@ -1382,7 +1412,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: #ffcd00;
 }
 
 #footer .footer-top .footer-contact {
@@ -1420,7 +1450,7 @@ h6 {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 #footer .credits {
