@@ -734,6 +734,11 @@ h6 {
   #about h1 {
     font-size: 34px;
   }
+  #about p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #502c1e;
+  }
 }
 @media (max-width: 991px) {
   #about img {
@@ -848,7 +853,6 @@ h6 {
 }
 #protection ul{
   margin-top: 0px;
-  margin-left: 20px;
   font-size: larger;
   list-style: none;
   color: #502c1e;
@@ -890,6 +894,9 @@ h6 {
       position: relative; /* Set the row as relative positioning context */
       flex-direction: column; /* Stack columns in a column layout on mobile */
   }
+  #protection ul {
+    font-size: 20px;
+}
 
   #protection .col-lg-5 {
       order: 2; /* Move the .col-lg-5 column below .col-lg-1 on mobile */
@@ -904,7 +911,6 @@ h6 {
       top: -160px; /* Adjust the value to control the spacing */
       margin-left: 0px ;
       margin-right: 0px;
-      width: 90%; /* Ensure full width */
       text-align: center; /* Center align the h2 element */
       
   }
@@ -1026,31 +1032,24 @@ h6 {
 # kids Section
 --------------------------------------------------------------*/
 #kids {
-  padding: 90px 0;
-  align-items: center;
+  padding: 400px 0;
+  background: url("../img/Kids\ 1920x1056.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  #kids {
+    background: url("../img/Kids\ 400x800.jpg") no-repeat ;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+    
+
+  }
 
 }
-#kids .supporter-logo:hover img {
-  transform: scale(1.2);
-}
-#kids h2{
-  color: #ffcd00;
-  font-weight: bold;
-}
-#kids h6{
-  margin-bottom: 400px;
-  font-weight: bolder;
-}
-
-#kids ul {
-  padding-right: 20px; /* Adjust the value to change the indentation from the right side */
-  direction: rtl; /* Set text direction to right-to-left */
-}
-
-#kids ul li {
-  margin-bottom: 10px; /* Add some spacing between each list item */
-}
-
 /*--------------------------------------------------------------
 # Where yo buy Section
 --------------------------------------------------------------*/
