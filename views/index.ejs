@@ -25,12 +25,14 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="assets/js/scroll.js" type="text/javascript"></script>
 
 </head>
 
 <body class="en">
-
+  <h7 id="scrollto" style="visibility: collapse;">
+    <%= destination%>
+  </h7>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
@@ -87,7 +89,7 @@
       <div class="text-overlay">
         <h1 class="mb-4 pb-0">
           <img ondragstart="return false;" src="./assets/img/Momento-01 (1).png" style="max-height: 240px;" data-aos="zoom-in-up"
-            data-aos-duration="2000"><br>
+            data-aos-duration="3000"><br>
 
           <span class="hero brown-text1" data-aos="zoom-in-up">Feel the summer breeze <br></span>
         </h1>
@@ -159,7 +161,7 @@
 
             <div class="col-lg-1 col-md-6">
               <a href="/product?section=ultraprotection"> <!-- Set the href attribute to the HTML file path -->
-                <img ondragstart="return false;" src="<%= image%>">
+                <img ondragstart="return false;" src="./assets/img/600x600 (Sunscreen).png">
               </a>
             </div>
 
@@ -180,7 +182,7 @@
 
 
             <div class="col-lg-6">
-              
+
               <a href="/product?section=tanning"> <!-- Set the href attribute to the HTML file path -->
                 <img ondragstart="return false;" src="./assets/img/600x600 (Tanning Oil).png">
               </a>
@@ -228,7 +230,7 @@
 
             </div>
             <div class="col-lg-1">
-              
+
               <a href="/product?section=aftersun"> <!-- Set the href attribute to the HTML file path -->
                 <img ondragstart="return false;" src="./assets/img/600x600 (After Sun).png">
               </a>
@@ -281,49 +283,49 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/1.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/1.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/2.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/2.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/3.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/3.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/4.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/4.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/5.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/5.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/6.svg" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/6.svg" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/7.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/7.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img ondragstart="return false;" src="/public/assets/img/supporters/8.png" class="img-fluid" alt="">
+              <img ondragstart="return false;" src="./assets/img/supporters/8.png" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -348,73 +350,84 @@
             <ul class="faq-list">
 
               <li>
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is the best way to use tanning oil? <i class="bi bi-chevron-down icon-show"></i><i
-                    class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is the best way to use
+                  tanning oil? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                </div>
                 <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    It is necessary to avoid the sunlight during midday hours (10 am - 4 pm), and to be exposed to the sun for 20 minutes on body and 20 minutes on the back, then repeat the same method for 3 consecutive days.
+                    It is necessary to avoid the sunlight during midday hours (10 am - 4 pm), and to be exposed to the
+                    sun for 20 minutes on body and 20 minutes on the back, then repeat the same method for 3 consecutive
+                    days.
 
                   </p>
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">How to use sunscreen lotion to protect the skin? <i class="bi bi-chevron-down icon-show"></i><i
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">How to use sunscreen lotion to
+                  protect the skin? <i class="bi bi-chevron-down icon-show"></i><i
                     class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    It is necessary to apply a generous amount over the body 15 minutes before exposure to the sun. Then repeat the process every two hours.
+                    It is necessary to apply a generous amount over the body 15 minutes before exposure to the sun. Then
+                    repeat the process every two hours.
 
                   </p>
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What is the country of origin for Momento products? <i class="bi bi-chevron-down icon-show"></i><i
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What is the country of origin for
+                  Momento products? <i class="bi bi-chevron-down icon-show"></i><i
                     class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq3" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    An Egyptian brand with ingredients from United Kingdom. 
+                    An Egyptian brand with ingredients from United Kingdom.
                   </p>
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Are the products suitable for children?<i class="bi bi-chevron-down icon-show"></i><i
-                    class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Are the products suitable for
+                  children?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq4" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Yes, they are suitable for children above 3 years. 
+                    Yes, they are suitable for children above 3 years.
 
                   </p>
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">What are the differences between protection SPF? <i class="bi bi-chevron-down icon-show"></i><i
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">What are the differences between
+                  protection SPF? <i class="bi bi-chevron-down icon-show"></i><i
                     class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq5" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    It depends on the skin tone, so we advise those of fair/light skin tone to choose the hightest possible SPF. 
+                    It depends on the skin tone, so we advise those of fair/light skin tone to choose the hightest
+                    possible SPF.
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What are the benefits of after sun gel? <i
-                    class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What are the benefits of after
+                  sun gel? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq6" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    The sun's rays raises the temperature of your body, so you can use the gel that cools and moisturizes the inflamed areas and it would refresh your body.
+                    The sun's rays raises the temperature of your body, so you can use the gel that cools and
+                    moisturizes the inflamed areas and it would refresh your body.
                   </p>
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">Should we use the sunscreen lotion only in the sea? <i
-                    class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">Should we use the sunscreen
+                  lotion only in the sea? <i class="bi bi-chevron-down icon-show"></i><i
+                    class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq7" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Sunscreen lotion is to be used at all times of the year that can be in the sun, whether in a street, club or university.
+                    Sunscreen lotion is to be used at all times of the year that can be in the sun, whether in a street,
+                    club or university.
                   </p>
                 </div>
               </li>
@@ -443,20 +456,22 @@
             <div class="contact-address">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <address>4 E Asmaa Fahmy. Ard El Golf, Heliopolis, 
-                Pharma Plaza Build Cairo, Egypt.</address>            </div>
+              <address>4 E Asmaa Fahmy. Ard El Golf, Heliopolis,
+                Pharma Plaza Build Cairo, Egypt.</address>
+            </div>
           </div>
 
           <div class="col-md-4">
             <div class="contact-phone">
               <i class="bi bi-phone"></i>
               <h3>Phone Number</h3>
-              <p>  <i class="fab fa-whatsapp" style="font-size: 1.0em; color: #25d366;"></i>  01222347852 <br>
-                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i>  02 21825000 <br>
-                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i>  02 21825001 <br>
-                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i>  02 21825002 <br>
-                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i>  02 21825003     </p>
-                </div>
+              <p> <i class="fab fa-whatsapp" style="font-size: 1.0em; color: #25d366;"></i> 01222347852 <br>
+                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i> 02 21825000 <br>
+                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i> 02 21825001 <br>
+                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i> 02 21825002 <br>
+                <i class="fas fa-phone" style="font-size: 0.8em; color: #00a0df;"></i> 02 21825003
+              </p>
+            </div>
           </div>
 
           <div class="col-md-4">
@@ -507,14 +522,16 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img  ondragstart="return false;" src="assets/img/Momento-01 (1).png" alt="Momento">
+            <img ondragstart="return false;" src="assets/img/Momento-01 (1).png" alt="Momento">
             <p>Keep Your Skin Strong & Protected with Momento
-              All you need to enjoy your vacation. We proudly use high quality ingredients, innovative formulations and advanced technology to guarantee you tan in a safe and natural way and we take care of your protection under the sun.</p>
+              All you need to enjoy your vacation. We proudly use high quality ingredients, innovative formulations and
+              advanced technology to guarantee you tan in a safe and natural way and we take care of your protection
+              under the sun.</p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <ul>
-             
+
             </ul>
           </div>
 
@@ -545,7 +562,7 @@
               <strong>Email:</strong>info@cristalegypt.com<br>
             </p>
 
-           <!--  <div class="social-links">
+            <!--  <div class="social-links">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>

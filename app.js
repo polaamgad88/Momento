@@ -88,30 +88,25 @@ const { MongoDBStore } = require("connect-mongodb-session");
 app.use(multer({ storage: fileStorage, fileFilter: Filter, limits: { fileSize: 100000 } }).single('image'), ErrorHandler);
 
 app.use("/home_ar", (req, res, next) => {
-  Products.findAll()
-    .then(([result, meta]) => {
-      console.log(result)
-      res.status(200).render('index-ar.ejs', { image: result[0].product_image, data: result[0]['description-ar'], name: result[0]['product_name-ar'] })
-    })
-    .catch((err) => {
-      console.log(err)
-    });
-
+  res.status(200).render('index-ar.ejs')
 });
 app.get("/product", (req, res, next) => {
-  console.log(req.query.section)
-  res.status(200).render('products.ejs', { destination: req.query.section })
-});
-app.use("/home", (req, res, next) => {
   Products.findAll()
     .then(([result, meta]) => {
+
       console.log(result)
-      res.status(200).render('index.ejs', { image: result[0].product_image, data: result[0].description, name: result[0].product_name })
+      res.status(200).render('products.ejs', { destination: req.query.section, products: result })
     })
     .catch((err) => {
       console.log(err)
     });
 
+});
+app.use("/home", (req, res, next) => {
+  res.status(200).render('index.ejs', { destination: "" })
+});
+app.use("/home_supporters", (req, res, next) => {
+  res.status(200).render('index.ejs', { destination: "supporters" })
 });
 app.post("/send_mail", (req, res, next) => {
   console.log(req.body)
