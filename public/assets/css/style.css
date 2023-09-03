@@ -36,7 +36,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: #502c1e;
 }
 
 .main-page {
@@ -151,7 +151,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner {
-  background: rgb(73,44,30,0.9);
+  background: rgb(73,44,30,0.3);
   height: 70px;
 }
 
@@ -218,7 +218,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #00a0df;
+  color: #502c1e;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -546,7 +546,7 @@ h6 {
 #hero h1 {
   color: #fff;
   font-family: 'DancingScript';
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -714,9 +714,9 @@ h6 {
 
 #about h1 {
   color: #ffcd00;
-  font-family: 'CinzelDecorative-Bold';
-  font-size: 56px;
-  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 800;
   text-transform: uppercase;
 
 }
@@ -727,7 +727,11 @@ h6 {
 #about h1 p {
   color: #01a1dd;
 }
-
+#about p {
+  font-size: 23px;
+  margin-bottom: 20px;
+  color: #502c1e;
+}
 
 
 @media (max-width: 991px) {
@@ -779,6 +783,8 @@ h6 {
   position: relative;
   color: #fff;
   font-size: x-large;
+  color: #502c1e;
+  padding-left: 0px;
 }
 
 
@@ -787,11 +793,12 @@ h6 {
 }
 #afterSun h2 {
   margin-top: 90px;
-  margin-left: 30px;
   color: #fff;
   background-color: #00a0df;
-  font-weight: bold;
+  font-weight: 700;
   width: 80%;
+  text-transform: uppercase;
+padding-left: 30px;
 }
 
 @media (max-width: 991px) {
@@ -855,7 +862,7 @@ h6 {
   margin-top: 0px;
   font-size: larger;
   list-style: none;
-  color: #502c1e;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -879,9 +886,11 @@ h6 {
   margin-top: 90px;
   margin-left: 30px;
   color: #fff;
-  font-weight: bold;
   background-color: #ffcd00;
   width: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 20px;
 }
 
 
@@ -896,6 +905,8 @@ h6 {
   }
   #protection ul {
     font-size: 20px;
+    color:#502c1e;
+
 }
 
   #protection .col-lg-5 {
@@ -904,6 +915,7 @@ h6 {
       color:#502c1e;
       font-weight: bold;
       list-style: square;
+
     }
 
   #protection .col-lg-5 h2 {
@@ -919,6 +931,8 @@ h6 {
       order: 1; /* Move the .col-lg-1 image above .col-lg-5 on mobile */
       margin-bottom: 20px; /* Add spacing between the columns */
       text-align: center; /* Center align the image */
+      color:#502c1e;
+
   }
 
   #protection .col-lg-1 img {
@@ -952,15 +966,19 @@ h6 {
   margin-right: 60px;
   color: #fff;
   background-color: #502c1e;
-  font-weight: bold;
+  font-weight: 700;
   width: 50%;
+  padding-left: 20px;
+  margin-left: 33px;
+  text-transform: uppercase;
+
 }
 
 #tanning ul {
   direction: ltr; /* Set text direction to right-to-left */
   color: #502c1e;
   list-style: none;
-
+  font-size: 23px;
 }
 
 
@@ -989,10 +1007,9 @@ h6 {
       order: 2; /* Move the .col-lg-5 column below .col-lg-1 on mobile */
       text-align: left; /* Center align the h2 element */
       color:#502c1e;
-      font-weight: 500;
       list-style: square;
-      font-size: large;
 
+    
     }
 
   #tanning .col-lg-5 h2 {
@@ -1113,7 +1130,7 @@ h6 {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #00a0df;
+  color: #fff;
   transition: 0.3s;
   font-weight: bold;
 }
@@ -1135,7 +1152,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed {
-  color: black;
+  color: #502c1e;
 }
 
 #faq .faq-list .collapsed:hover {
@@ -1171,7 +1188,7 @@ h6 {
 #contact .contact-info i {
   font-size: 48px;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: #00a0df;
 }
 
@@ -1186,7 +1203,7 @@ h6 {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #112363;
+  color: #502c1e;
 }
 
 #contact .contact-info a {
@@ -1308,14 +1325,14 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: #502c1e;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: #502c1e;
   padding: 60px 0 30px 0;
 }
 
@@ -1432,20 +1449,7 @@ h6 {
   width: 65%;
 }
 
-#footer .footer-top .footer-newsletter input[type=submit] {
-  background: #f82249;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-}
 
-#footer .footer-top .footer-newsletter input[type=submit]:hover {
-  background: #e0072f;
-}
 
 #footer .copyright {
   text-align: center;
@@ -1455,5 +1459,5 @@ h6 {
 #footer .credits {
   text-align: center;
   font-size: 13px;
-  color: #ddd;
+  color: #fff;
 }
