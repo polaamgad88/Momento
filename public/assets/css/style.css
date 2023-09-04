@@ -138,7 +138,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 90px;
+  height: 70px;
   position: fixed;
   left: 0;
   top: 0;
@@ -221,7 +221,7 @@ h6 {
   color: #502c1e;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 17px;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -489,11 +489,7 @@ h6 {
   text-align: center;
   color: white;
 }
-#hero .blue-text {
-  color: #01a1dd; /* Change the color of the text within this span */
-  font-family: 'DancingScript';
 
-}
 
 #hero .brown-text1 {
   color: #502c1e; /* Change the color of the text within this span */
@@ -501,11 +497,7 @@ h6 {
   text-transform: capitalize;
 }
 
-#hero .yellow-text {
-  color: #fecf07; /* Change the color of the text within this span */
-  font-family: 'DancingScript';
 
-}
 
 @media (min-width: 1024px) {
   #hero {
@@ -573,103 +565,7 @@ h6 {
 }
 
 
-#hero .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#FFCD0E 50%, rgba(101, 111, 150, 0.15) 52%);
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
 
-#hero .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-#hero .play-btn:before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  animation-delay: 0s;
-  animation: pulsate-btn 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 2px solid rgba(163, 163, 163, 0.4);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-#hero .play-btn:hover::after {
-  border-left: 15px solid #01a1dd;
-  transform: scale(20);
-}
-
-#hero .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  animation: none;
-  border-radius: 0;
-}
-
-#hero .about-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  animation-delay: 0.8s;
-  border: 2px solid #f82249;
-}
-
-#hero .about-btn:hover {
-  background: #f82249;
-  color: #fff;
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # About Section
@@ -1140,19 +1036,23 @@ padding-left: 30px;
   position: absolute;
   left: 0;
   top: -2px;
+
 }
 
 #faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
+  color: #fff;
+
 }
 
 #faq .faq-list .icon-show {
   display: inline-block;
+
 }
 
 #faq .faq-list .collapsed {
-  color: #502c1e;
+  color: #fff;
 }
 
 #faq .faq-list .collapsed:hover {
@@ -1162,11 +1062,14 @@ padding-left: 30px;
 #faq .faq-list .collapsed .icon-show {
   display: inline-block;
   transition: 0.6s;
+
 }
 
 #faq .faq-list .collapsed .icon-close {
   display: inline-block;
   transition: 0.6s;
+  color: #fff;
+
 }
 
 /*--------------------------------------------------------------
@@ -1351,12 +1254,13 @@ padding-left: 30px;
 }
 
 #footer .footer-top .footer-info img {
-  height: 40px;
+  height: 80px;
   margin-bottom: 10px;
+  margin-left: 80px;
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
