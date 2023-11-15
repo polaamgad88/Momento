@@ -25,7 +25,7 @@
     function getProductList() {
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: 'http://127.0.0.1:4000/products/momento',
+          url: 'http://gemegypt.net/gem_backend/products/momento',
           type: 'GET',
           success: function (response) {
             resolve(response.data);
@@ -54,7 +54,7 @@
           var listItem = `
             <section class="container section-`+ color + `" id="` + product.category + `">
             <div class="left-column">
-              <img crossorigin="anonymous" src="http://127.0.0.1:4000/`+ imagePath + `" alt="` + product.product_name + `">
+              <img src="http://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
             </div>
             <div class="right-column">
               <div class="product-description">
