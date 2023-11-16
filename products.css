@@ -3,7 +3,8 @@
   left: 20px;
   bottom: 700px;
   text-align: center;
-  z-index: 999; /* Ensure the button is above other content */
+  z-index: 999;
+  /* Ensure the button is above other content */
 }
 
 .back-link {
@@ -25,28 +26,46 @@
   font-size: 20px;
   vertical-align: middle;
 }
+
 /* Basic Styling */
-html, body {
-  
+html,
+body {
+
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-section{
-  padding: 70px 0; /* Adjust padding as needed */
+
+section {
+  padding: 70px 0;
+  /* Adjust padding as needed */
   margin: 0 auto;
 }
+
 .container {
   margin: 0 auto;
   padding: 15px;
   display: flex;
-  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
-  
+  flex-wrap: wrap;
+  /* Allow sections to wrap on smaller screens */
+
 }
+
 /* Left Column */
-.left-column img {
-  width: 75%;
-  
- 
+.product-image {
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+}
+
+.product-image.loaded {
+  opacity: 1;
+  /* Show the image when loaded */
 }
 
 .section-yellow {
@@ -56,10 +75,12 @@ section{
 .section-blue {
   background-color: #00a0df;
 }
+
 .section-brown {
   background-color: #502c1e;
   color: #fff;
 }
+
 .section-brown h1 {
   color: #fff;
 }
@@ -72,7 +93,10 @@ section{
 /* Columns */
 .left-column {
   width: 65%;
+  overflow: hidden;
+  /* Hide any overflow */
   position: relative;
+  /* Position container */
 }
 
 .right-column {
@@ -88,6 +112,7 @@ section{
   border-bottom: 1px solid #E1E8EE;
   margin-bottom: 20px;
 }
+
 .product-description span {
   font-size: 12px;
   color: #00a0df;
@@ -96,11 +121,13 @@ section{
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .product-description h1 {
   font-weight: 300;
   font-size: 52px;
   letter-spacing: -2px;
 }
+
 .product-description p {
   font-size: 16px;
   font-weight: 300;
@@ -135,6 +162,7 @@ section{
   padding: 12px 30px;
   transition: all .5s;
 }
+
 .cart-btn:hover {
   background-color: #64af3d;
 }
@@ -145,50 +173,51 @@ section{
 /* Mobile View Styles */
 /* Mobile View Styles */
 @media (max-width: 768px) {
+
   /* Container */
   .left-column,
   .right-column {
     width: 100%;
     text-align: center;
   }
-  
+
   /* Image */
   .left-column img {
     max-width: 100%;
     margin: 0 auto;
   }
-  
+
   /* Product Description */
   .product-description {
     text-align: center;
     margin-top: 20px;
     order: -1;
   }
-  
+
   /* Product Title */
   .product-description h1 {
     font-size: 1.5em;
     margin: 10px 0;
   }
-  
+
   /* Other Product Description Text */
   .product-description span,
   .product-description p {
     font-size: 1em;
     margin: 0px 0;
   }
-  
+
   /* Product Price and Cart Button */
   .product-price {
     text-align: center;
     margin-top: 0px;
   }
-  
+
   .product-price p {
     font-size: 1.2em;
     margin: 5px 0;
   }
-  
+
   .cart-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -200,5 +229,3 @@ section{
     margin-bottom: 20px;
   }
 }
-
-

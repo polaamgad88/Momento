@@ -54,7 +54,7 @@
           var listItem = `
             <section class="container section-`+ color + `" id="` + product.category + `">
             <div class="left-column">
-              <img src="http://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
+              <img class="product-image" src="assets/img/Momento-01 (1).png" data-src="http://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
             </div>
             <div class="right-column">
               <div class="product-description">
@@ -91,6 +91,7 @@
     });
   </script>
   <div id="productList"></div>
+  <script src="assets/js/product.js"></script>
 </body>
 
 </html>
