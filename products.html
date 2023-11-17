@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tutorial</title>
+  <title>Momento Products</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <!-- CSS -->
@@ -25,7 +25,7 @@
     function getProductList() {
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: 'http://gemegypt.net/gem_backend/products/momento',
+          url: 'https://gemegypt.net/gem_backend/products/momento',
           type: 'GET',
           success: function (response) {
             resolve(response.data);
@@ -54,7 +54,7 @@
           var listItem = `
             <section class="container section-`+ color + `" id="` + product.category + `">
             <div class="left-column">
-              <img class="product-image" src="assets/img/Momento-01 (1).png" data-src="http://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
+              <img class="product-image" src="assets/img/Momento-01 (1).png" data-src="https://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
             </div>
             <div class="right-column">
               <div class="product-description">
