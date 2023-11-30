@@ -25,7 +25,7 @@
     function getProductList() {
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: 'https://gemegypt.net/gem_backend/products/momento',
+          url: 'https://gemegypt.net/gem_backend/products/website/momento',
           type: 'GET',
           success: function (response) {
             resolve(response.data);
@@ -43,7 +43,7 @@
         productList.append('<p>No products available.</p>');
       } else {
         products.forEach(function (product) {
-          var imagePath = product.product_image_path.replace('\\', '/');
+          var imagePath = product.images[0].replace('\\', '/');
           var color = 'white'
           if (product.category === "ultraprotection")
             color = "blue"
@@ -54,7 +54,7 @@
           var listItem = `
             <section class="container section-`+ color + `" id="` + product.category + `">
             <div class="left-column">
-              <img class="product-image" src="assets/img/Momento-01 (1).png" data-src="https://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
+              <img class="product-image" src="https://gemegypt.net/gem_backend/images/`+ imagePath + `" alt="` + product.product_name + `">
             </div>
             <div class="right-column">
               <div class="product-description">
@@ -91,7 +91,6 @@
     });
   </script>
   <div id="productList"></div>
-  <script src="assets/js/product.js"></script>
 </body>
 
 </html>
