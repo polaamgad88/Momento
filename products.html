@@ -25,7 +25,7 @@
     function getProductList() {
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: 'https://gemegypt.net/gem_backend/products/website/momento',
+          url: 'https://gemegypt.net/gem_backend/products?website=momento',
           type: 'GET',
           success: function (response) {
             resolve(response.data);
